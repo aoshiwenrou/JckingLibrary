@@ -4,6 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JckingLibrary.iml" filepath="$PROJECT_DIR$/JckingLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_annotation/jcking_b_annotation.iml" filepath="$PROJECT_DIR$/jcking_b_annotation/jcking_b_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_compiler/jcking_b_compiler.iml" filepath="$PROJECT_DIR$/jcking_b_compiler/jcking_b_compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_framework/jcking_b_framework.iml" filepath="$PROJECT_DIR$/jcking_b_framework/jcking_b_framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" filepath="$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" filepath="$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" filepath="$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" />
     </modules>
   </component>
 </project>

@@ -1,1 +1,5 @@
-include ':app'
+include ':app', ':jcking_b_framework', ':jcking_b_log', ':jcking_m_common'
+
+include ':jcking_b_router'
+include ':jcking_b_annotation'
+include ':jcking_b_compiler'
