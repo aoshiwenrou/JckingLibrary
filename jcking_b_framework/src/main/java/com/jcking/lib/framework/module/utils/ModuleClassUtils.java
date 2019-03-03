@@ -270,7 +270,7 @@ public class ModuleClassUtils {
     }
 
     /**
-     * Identifies if the current VM has a native support for multidex, meaning there is no need for
+     * Identifies if the current VM honas a native support for multidex, meaning there is no need for
      * additional installation by this library.
      *
      * @return true if the VM handles multidex

@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" filepath="$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" filepath="$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" filepath="$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_m_login/jcking_m_login.iml" filepath="$PROJECT_DIR$/jcking_m_login/jcking_m_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_m_main/jcking_m_main.iml" filepath="$PROJECT_DIR$/jcking_m_main/jcking_m_main.iml" />
     </modules>
   </component>
 </project>

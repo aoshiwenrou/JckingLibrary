@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jcking.login">
+
+    <application>
+        <activity
+            android:name="com.jcking.login.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBarFullScreen"/>
+
+    </application>
+</manifest>
