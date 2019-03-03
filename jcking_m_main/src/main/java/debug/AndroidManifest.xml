@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cryallen.appmain" >
+    package="com.jcking.main" >
 
     <application
-        android:name="debug.MainApplication"
+        android:name="com.jcking.common.ModuleApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
