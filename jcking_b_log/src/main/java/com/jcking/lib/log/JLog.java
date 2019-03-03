@@ -3,6 +3,8 @@ package com.jcking.lib.log;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.orhanobut.logger.Logger;
+
 /**
  * @author Jcking
  * @time 2019/3/3 17:34
@@ -18,66 +20,66 @@ public class JLog {
 
     public static void e(String tag, String desc) {
         if (DEBUG) {
-            Log.e(tag, desc);
+            Logger.e(tag, desc);
         }
     }
 
     public static void e(String desc) {
         if (DEBUG) {
             String tag = generateTag();
-            Log.e(tag, desc);
+            Logger.e(tag, desc);
         }
     }
 
     public static void w(String tag, String desc) {
         if (DEBUG) {
-            Log.w(tag, desc);
+            Logger.w(tag, desc);
         }
     }
 
     public static void w(String desc) {
         if (DEBUG) {
             String tag = generateTag();
-            Log.w(tag, desc);
+            Logger.w(tag, desc);
         }
     }
 
     public static void i(String tag, String desc) {
         if (DEBUG) {
-            Log.i(tag, desc);
+            Logger.i(tag, desc);
         }
     }
 
     public static void i(String desc) {
         if (DEBUG) {
             String tag = generateTag();
-            Log.i(tag, desc);
+            Logger.i(tag, desc);
         }
     }
 
     public static void d(String tag, String desc) {
         if (DEBUG) {
-            Log.d(tag, desc);
+            Logger.d(tag, desc);
         }
     }
 
     public static void d(String desc) {
         if (DEBUG) {
             String tag = generateTag();
-            Log.d(tag, desc);
+            Logger.d(tag, desc);
         }
     }
 
     public static void v(String tag, String desc) {
         if (DEBUG) {
-            Log.v(tag, desc);
+            Logger.v(tag, desc);
         }
     }
 
     public static void v(String desc) {
         if (DEBUG) {
             String tag = generateTag();
-            Log.v(tag, desc);
+            Logger.v(tag, desc);
         }
     }
 

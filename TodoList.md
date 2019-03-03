@@ -1,0 +1,2 @@
+> Log模块使用Logger
+> 设计一个用于在module模式中使用的Application基类
