@@ -1,0 +1,6 @@
+apply from: rootProject.getRootDir().getAbsolutePath() + "/libconfig.gradle"
+
+dependencies {
+    implementation project(':jcking_b_log')
+    api 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+}
