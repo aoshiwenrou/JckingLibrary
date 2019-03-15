@@ -15,7 +15,7 @@ public class FrameApplication extends BaseApplication {
 
     private void init(){
         //日志显示开关
-        JLog.enable(BuildConfig.DEBUG);
+        JLog.init(BuildConfig.DEBUG);
         //初始化路由
         RouterManager.init(this, BuildConfig.DEBUG);
     }
