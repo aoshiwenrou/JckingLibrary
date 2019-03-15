@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.os.Looper;
 
 import com.jcking.lib.framework.base.BaseApplication;
 
@@ -31,7 +32,7 @@ public class AppUtil {
      * 获取软件版本
      */
     public static int getAppVersion(Context context) {
-        if(null == getPackageInfo(context)){
+        if (null == getPackageInfo(context)) {
             return 0;
         }
         return getPackageInfo(context).versionCode;
@@ -58,7 +59,7 @@ public class AppUtil {
      * 获取软件版本
      */
     public static String getAppVersionName(Context context) {
-        if(null == getPackageInfo(context)){
+        if (null == getPackageInfo(context)) {
             return "5.0.x";
         }
 
@@ -84,4 +85,14 @@ public class AppUtil {
             return false;
         }
     }
+
+    /**
+     * 是否是在主线程
+     *
+     * @return
+     */
+    public static boolean isMainThread() {
+        return Looper.myLooper() == Looper.getMainLooper();
+    }
+
 }

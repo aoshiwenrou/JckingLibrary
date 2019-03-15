@@ -36,6 +36,10 @@ android {
         sourceCompatibility rootProject.ext.javaVersion
         targetCompatibility rootProject.ext.javaVersion
     }
+
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
@@ -43,31 +47,14 @@ dependencies {
     api project(':jcking_b_framework')
     api project(':jcking_b_router')
     api project(':jcking_b_log')
+    api project(':jcking_b_pay')
+    api project(':jcking_b_http')
 
     // Android Support
     api "com.android.support:appcompat-v7:${rootProject.supportLibraryVersion}"
     api "com.android.support:design:${rootProject.supportLibraryVersion}"
     api "com.android.support:recyclerview-v7:${rootProject.supportLibraryVersion}"
     api "com.android.support.constraint:constraint-layout:${rootProject.constraintVersion}"
-
-    // RxJava
-    api "io.reactivex.rxjava2:rxjava:${rootProject.rxjavaVersion}"
-    api "io.reactivex.rxjava2:rxandroid:${rootProject.rxandroidVersion}"
-
-    // OkHttp
-    api "com.squareup.okhttp3:okhttp:${rootProject.okhttpVersion}"
-    api "com.squareup.okhttp3:logging-interceptor:${rootProject.okhttploggingVersion}"
-
-    // Retrofit
-    api "com.squareup.retrofit2:retrofit:${rootProject.retrofitVersion}"
-    api "com.squareup.retrofit2:adapter-rxjava2:${rootProject.retrofitVersion}"
-    api "com.squareup.retrofit2:converter-scalars:${rootProject.retrofitVersion}"
-    api "com.squareup.retrofit2:converter-gson:${rootProject.retrofitVersion}"
-    api ("com.squareup.retrofit2:converter-simplexml:${rootProject.retrofitVersion}"){
-        exclude group: 'xpp3', module: 'xpp3'
-        exclude group: 'stax', module: 'stax-api'
-        exclude group: 'stax', module: 'stax'
-    }
 
     // 第三方库
     api "org.xutils:xutils:${rootProject.xutilsVersion}"
