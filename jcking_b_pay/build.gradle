@@ -1,0 +1,6 @@
+apply from: rootProject.getRootDir().getAbsolutePath() + "/libconfig.gradle"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':jcking_b_log')
+}
