@@ -1,4 +1,4 @@
-include ':app'
+include ':app', ':zzstudy_js'
 
 include ':jcking_m_common'
 include ':jcking_m_main'
