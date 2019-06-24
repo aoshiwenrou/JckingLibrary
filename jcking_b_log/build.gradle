@@ -1,4 +1,3 @@
-//apply from: rootProject.getRootDir().getAbsolutePath() + "/libconfig.gradle"
 apply plugin: 'com.android.library'
 
 android {
