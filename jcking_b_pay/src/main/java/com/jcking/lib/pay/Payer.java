@@ -19,10 +19,6 @@ public class Payer {
         this.mActivity = activity;
     }
 
-    public void pay(PayWay payWay, String payInfo) {
-        pay(payWay.value, payInfo);
-    }
-
     public void pay(int payWay, String payInfo) {
         this.mPayWay = payWay;
         this.mPayInfo = payInfo;
@@ -35,10 +31,6 @@ public class Payer {
         return this;
     }
 
-    private IPayment createPayment(PayWay payWay, String payInfo) {
-        return createPayment(payWay.value, payInfo);
-    }
-
     private IPayment createPayment(int payWay, String payInfo) {
         PaymentFactory factory = PaySettings.getIntstance().getPaymentFactory(mActivity);
         return factory.createPayment(payWay, payInfo);
@@ -46,15 +38,5 @@ public class Payer {
 
     public void continuePay() {
         pay(mPayWay, mPayInfo);
-    }
-
-    public enum PayWay {
-        ALIPAY(1), WXPAY(3), PINGPP_ALIPAY(7), PINGPP_WX(8);
-
-        int value;
-
-        PayWay(int value) {
-            this.value = value;
-        }
     }
 }

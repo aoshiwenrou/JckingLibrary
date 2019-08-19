@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':jcking_b_log')
+    //fresco
+    api "com.facebook.fresco:fresco:${rootProject.frescoVersion}"
+    // 支持 GIF 动图
+    api "com.facebook.fresco:animated-gif:${rootProject.frescoVersion}"
+//    // 支持 WebP （静态图+动图）
+//    api "com.facebook.fresco:animated-webp:${rootProject.frescoVersion}"
+//    api "com.facebook.fresco:webpsupport:${rootProject.frescoVersion}"
+}

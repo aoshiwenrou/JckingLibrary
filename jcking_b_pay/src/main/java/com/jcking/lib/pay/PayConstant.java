@@ -9,9 +9,11 @@ public class PayConstant {
     public static final int WXIN_SDK_PAY_FLAG_FAILED = 2;
     public static final int SDK_PAY_FLAG = 3;
 
-    public final static int ORDER_PAY_ALIPAY = 1;
-    //银联
-    public final static int ORDER_PAY_UNIONPAY = 2;
-    public final static int ORDER_PAY_WECHAT = 3;
+    // 支付方式：支付宝
+    public final static int PAY_WAY_ALIPAY = 1;
+    // 支付方式：微信
+    public final static int PAY_WAY_WECHAT = 2;
+    // 支付方式：银联
+    public final static int PAY_WAY_UNIONPAY = 3;
 }
 

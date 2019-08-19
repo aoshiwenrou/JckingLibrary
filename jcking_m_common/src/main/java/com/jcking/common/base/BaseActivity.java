@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.jcking.common.utils.NavigationBarFit;
+
 public class BaseActivity extends AppCompatActivity {
     private ActivityManager mActivityManager = ActivityManager.getActivityManager();
     @Override
@@ -32,6 +34,13 @@ public class BaseActivity extends AppCompatActivity {
         if(null != mActivityManager) {
             mActivityManager.putActivity(this);
         }
+    }
+
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        // 适配底部虚拟按键
+        NavigationBarFit.assistActivity(findViewById(android.R.id.content));
     }
 
     @Override

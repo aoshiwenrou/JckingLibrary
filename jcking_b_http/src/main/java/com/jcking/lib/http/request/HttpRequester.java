@@ -7,6 +7,9 @@ import com.jcking.lib.http.interceptor.LogInterceptor;
 import com.jcking.lib.http.interceptor.ToStringConverterFactory;
 import com.jcking.lib.log.JLog;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
@@ -189,7 +192,17 @@ public class HttpRequester {
      */
     public Observable<String> httpGet(String baseUrl, String url, Map<String, String> params) {
         HttpApi api = getHttpApi(baseUrl);
-        return api.get(url, params);
+        if(api == null)
+        excuteParams(params);
+        String[] urlPath = url.split("/");
+        switch (urlPath.length) {
+            case 1:
+                return api.get(urlPath[0], params);
+            case 2:
+                return api.get(urlPath[0], urlPath[1], params);
+            default:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], params);
+        }
     }
 
     /**
@@ -213,7 +226,29 @@ public class HttpRequester {
      */
     public Observable<String> httpPost(String baseUrl, String url, Map<String, String> params) {
         HttpApi api = getHttpApi(baseUrl);
-        return api.post(url, params);
+        excuteParams(params);
+        String[] urlPath = url.split("/");
+        switch (urlPath.length) {
+            case 1:
+                return api.post(urlPath[0], params);
+            case 2:
+                return api.post(urlPath[0], urlPath[1], params);
+            default:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], params);
+        }
+    }
+
+    /**
+     * 对参数进行再加工。如果有值为null，则默认为空字符串
+     *
+     * @param params
+     */
+    private void excuteParams(Map<String, String> params) {
+        if (params == null || params.isEmpty())
+            return;
+        for (String key : params.keySet())
+            if (TextUtils.isEmpty(params.get(key)))
+                params.put(key, "");
     }
 
     /**

@@ -18,11 +18,25 @@ import retrofit2.http.QueryMap;
  */
 interface HttpApi {
 
-    @GET("{getPath}")
-    Observable<String> get(@Path("getPath") String path, @QueryMap Map<String, String> pamars);
+    @GET("{path}")
+    Observable<String> get(@Path("path") String path, @QueryMap Map<String, String> pamars);
+
+    @GET("{path}/{path2}")
+    Observable<String> get(@Path("path") String path, @Path("path2") String path2, @QueryMap Map<String, String> pamars);
+
+    @GET("{path}/{path2}/{path3}")
+    Observable<String> get(@Path("path") String path, @Path("path2") String path2, @Path("path3") String path3, @QueryMap Map<String, String> pamars);
 
     @FormUrlEncoded
-    @POST("{postPath}")
-    Observable<String> post(@Path("postPath") String path, @FieldMap Map<String, String> pamars);
+    @POST("{path}")
+    Observable<String> post(@Path("path") String path, @FieldMap Map<String, String> pamars);
+
+    @FormUrlEncoded
+    @POST("{path}/{path2}")
+    Observable<String> post(@Path("path") String path, @Path("path2") String path2, @FieldMap Map<String, String> pamars);
+
+    @FormUrlEncoded
+    @POST("{path}/{path2}/{path3}")
+    Observable<String> post(@Path("path") String path, @Path("path2") String path2, @Path("path3") String path3, @FieldMap Map<String, String> pamars);
 
 }

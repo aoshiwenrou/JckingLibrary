@@ -144,26 +144,26 @@ public class BaseApplication extends Application {
 
         @Override
         public void onActivityCreated(Activity activity, Bundle bundle) {
-            JLog.d(TAG, "onActivityCreated --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityCreated --> " + activity.getClass().getName());
             BaseApplication.this.mActivityList.add(0, activity);
         }
 
         @Override
         public void onActivityStarted(Activity activity) {
-            JLog.d(TAG, "onActivityStarted --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityStarted --> " + activity.getClass().getName());
             if (BaseApplication.this.mCurrentCount == 0 && !BaseApplication.this.isCurrent) {
                 BaseApplication.this.isCurrent = true;
                 for (IApplicationDelegate delegate : ModuleManager.getInstance().getAppDelegateList()) {
                     delegate.enterForeground();
                 }
-                JLog.d("BaseApplication", "The App go to foreground");
+//                JLog.d("BaseApplication", "The App go to foreground");
             }
             BaseApplication.this.mCurrentCount++;
         }
 
         @Override
         public void onActivityResumed(Activity activity) {
-            JLog.d(TAG, "onActivityResumed --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityResumed --> " + activity.getClass().getName());
             if (!BaseApplication.this.mResumeActivity.contains(activity)) {
                 BaseApplication.this.mResumeActivity.add(activity);
             }
@@ -172,12 +172,12 @@ public class BaseApplication extends Application {
 
         @Override
         public void onActivityPaused(Activity activity) {
-            JLog.d(TAG, "onActivityPaused --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityPaused --> " + activity.getClass().getName());
         }
 
         @Override
         public void onActivityStopped(Activity activity) {
-            JLog.d(TAG, "onActivityStopped --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityStopped --> " + activity.getClass().getName());
             BaseApplication.this.mResumeActivity.remove(activity);
             BaseApplication.this.mCurrentCount--;
             if (BaseApplication.this.mCurrentCount == 0 && BaseApplication.this.isCurrent) {
@@ -185,18 +185,18 @@ public class BaseApplication extends Application {
                 for (IApplicationDelegate delegate : ModuleManager.getInstance().getAppDelegateList()) {
                     delegate.enterBackground();
                 }
-                JLog.d(TAG, "The App go to background");
+//                JLog.d(TAG, "The App go to background");
             }
         }
 
         @Override
         public void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
-            JLog.d(TAG, "onActivitySaveInstanceState --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivitySaveInstanceState --> " + activity.getClass().getName());
         }
 
         @Override
         public void onActivityDestroyed(Activity activity) {
-            JLog.d(TAG, "onActivityDestroyed --> " + activity.getClass().getName());
+//            JLog.d(TAG, "onActivityDestroyed --> " + activity.getClass().getName());
             BaseApplication.this.mActivityList.remove(activity);
         }
     }

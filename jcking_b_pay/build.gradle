@@ -20,4 +20,5 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':jcking_b_log')
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }

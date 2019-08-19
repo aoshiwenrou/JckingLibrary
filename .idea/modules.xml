@@ -8,8 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/jcking_b_compiler/jcking_b_compiler.iml" filepath="$PROJECT_DIR$/jcking_b_compiler/jcking_b_compiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_framework/jcking_b_framework.iml" filepath="$PROJECT_DIR$/jcking_b_framework/jcking_b_framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_http/jcking_b_http.iml" filepath="$PROJECT_DIR$/jcking_b_http/jcking_b_http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_image/jcking_b_image.iml" filepath="$PROJECT_DIR$/jcking_b_image/jcking_b_image.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" filepath="$PROJECT_DIR$/jcking_b_log/jcking_b_log.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_pay/jcking_b_pay.iml" filepath="$PROJECT_DIR$/jcking_b_pay/jcking_b_pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcking_b_permission/jcking_b_permission.iml" filepath="$PROJECT_DIR$/jcking_b_permission/jcking_b_permission.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" filepath="$PROJECT_DIR$/jcking_b_router/jcking_b_router.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" filepath="$PROJECT_DIR$/jcking_m_common/jcking_m_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/jcking_m_login/jcking_m_login.iml" filepath="$PROJECT_DIR$/jcking_m_login/jcking_m_login.iml" />

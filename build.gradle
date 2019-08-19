@@ -37,6 +37,9 @@ allprojects {
             url 'https://maven.google.com/'
             name 'Google'
         }
+        maven {
+            url 'https://jitpack.io'
+        }
     }
 
     gradle.projectsEvaluated {
@@ -70,7 +73,17 @@ ext {
     constraintVersion = "1.0.2"
     multidexVersion = "1.0.1"
 
-    //第三方库版本
+    //////////////////第三方库版本//////////////////
+
+    //Http
+    rxjavaVersion = '2.1.8'
+    rxandroidVersion = '2.0.1'
+    rxpermissions = '0.10.2'
+    okhttpVersion = '3.9.1'
+    okhttploggingVersion = '3.8.1'
+    retrofitVersion = '2.3.0'
+
+    frescoVersion = "1.13.0"
     arouterApiVersion = "1.3.1"
     annotationProcessor = "1.1.4"
     xutilsVersion = "3.5.0"
@@ -78,9 +91,4 @@ ext {
     gsonVersion = "2.8.2"
     fragmentationVersion = "1.1.9"
     loggerVersion = "2.1.1"
-    rxjavaVersion = '2.1.8'
-    rxandroidVersion = '2.0.1'
-    okhttpVersion = '3.9.1'
-    okhttploggingVersion = '3.8.1'
-    retrofitVersion = '2.3.0'
 }

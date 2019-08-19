@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">JckingPay</string>
+
+    <string name="order_pay_wx_not">您没有安装微信</string>
+    <string name="order_pay_wx_not2">您当前微信版本不支持支付</string>
+    <string name="order_pay_failure">支付失败</string>
+    <string name="order_pay_failure_message">您的订单未支付成功！</string>
+    <string name="order_pay_failure_order_list">以后再说</string>
+    <string name="order_pay_failure_repay">继续支付</string>
 </resources>

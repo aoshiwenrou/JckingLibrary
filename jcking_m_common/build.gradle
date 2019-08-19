@@ -45,10 +45,9 @@ android {
 dependencies {
     // 本地加载
     api project(':jcking_b_framework')
-    api project(':jcking_b_router')
     api project(':jcking_b_log')
-    api project(':jcking_b_pay')
     api project(':jcking_b_http')
+    api project(':jcking_b_permission')
 
     // Android Support
     api "com.android.support:appcompat-v7:${rootProject.supportLibraryVersion}"
