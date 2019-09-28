@@ -200,8 +200,20 @@ public class HttpRequester {
                 return api.get(urlPath[0], params);
             case 2:
                 return api.get(urlPath[0], urlPath[1], params);
-            default:
+            case 3:
                 return api.get(urlPath[0], urlPath[1], urlPath[2], params);
+            case 4:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], params);
+            case 5:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], params);
+            case 6:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], params);
+            case 7:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], params);
+            case 8:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], urlPath[7], params);
+            default:
+                return api.get(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], urlPath[7], urlPath[8], params);
         }
     }
 
@@ -233,8 +245,20 @@ public class HttpRequester {
                 return api.post(urlPath[0], params);
             case 2:
                 return api.post(urlPath[0], urlPath[1], params);
-            default:
+            case 3:
                 return api.post(urlPath[0], urlPath[1], urlPath[2], params);
+            case 4:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], params);
+            case 5:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], params);
+            case 6:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], params);
+            case 7:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], params);
+            case 8:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], urlPath[7], params);
+            default:
+                return api.post(urlPath[0], urlPath[1], urlPath[2], urlPath[3], urlPath[4], urlPath[5], urlPath[6], urlPath[7], urlPath[8], params);
         }
     }
 
